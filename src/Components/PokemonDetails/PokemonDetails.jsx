@@ -5,10 +5,10 @@ import axios from 'axios';
 import usePokemon from '../../hooks/usePokemon';
 import Pokemon from '../Pokemon/Pokemon';
 
-function PokemonDetails(){
+function PokemonDetails({pokemonName}){
 
-const {id}=useParams()
-const [pokemon,pokemonListState]=usePokemon(id);
+
+const [pokemon,pokemonListState]=usePokemon(pokemonName);
 
 
 

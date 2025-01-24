@@ -15,8 +15,8 @@ return(
         <h1>Pokemon List</h1>
        </div>
        <div className='page-controls'>
-        <button onClick={()=>setPokemonListState({...pokemonListState,pokedexUrl:pokemonListState.prev})}>prev</button>
-        <button onClick={()=>setPokemonListState({...pokemonListState,pokedexUrl:pokemonListState.next})}>Next</button>
+        <button onClick={()=>setPokemonListState({...pokemonListState,pokedexUrl:pokemonListState.prevUrl})}>prev</button>
+        <button onClick={()=>setPokemonListState({...pokemonListState,pokedexUrl:pokemonListState.nextUrl})}>Next</button>
        </div>
       <div className='pokemon-list'> 
         {pokemonListState.pokemonList.map(pokemon=><Pokemon name={pokemon.name} key={pokemon.id} url={pokemon.image} id={pokemon.id}/>)}
